@@ -33,7 +33,8 @@ const removeDisplay = () => {
   inputValue.focus();
 };
 
-const addTodo = () => {
+const addTodo = (event) => {
+  event.preventDefault()
   const inputText = document.querySelector(".todoInput").value;
 
   if (inputText === "") {
